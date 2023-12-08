@@ -1,10 +1,12 @@
-variable vpc_id {
+variable "vpc_id" {
   type        = string
-  description = "vpc-07cd5506f7d918e8d"
+  description = "Informe sua VPC ID"
+  default     = "vpc-07cd5506f7d918e8d"
 }
 
-variable subnet_id {
+variable "subnet_id" {
   type        = string
-  description = "subnet-0126234655070743b"
+  description = "Informe sua subnet id"
+  default     = "subnet-0126234655070743b"
 }
 

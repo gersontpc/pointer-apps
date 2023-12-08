@@ -21,7 +21,7 @@ module "pointer_sg" {
       cidr_blocks = "0.0.0.0/0"
     }
   ]
-  egress_rules        = ["all-all"]
+  egress_rules = ["all-all"]
 }
 
 module "ec2_instance" {
@@ -38,10 +38,10 @@ module "ec2_instance" {
   subnet_id              = var.subnet_id
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "Production"
-    CC = "10504"
-    OwnerSquad = "Devops"
+    CC          = "10504"
+    OwnerSquad  = "Devops"
   }
 }
 
